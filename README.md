@@ -1,6 +1,6 @@
 # Sistema de Pedidos
 
-Es un sistema de pedidos que permite registrar cada pedido y ver resumen de ventas.
+Es una API que permite registrar cada pedido y ver resumen de ventas.
 
 # Problema
 
