@@ -8,3 +8,5 @@ venv/
 *.pyc
 *.db
 *.sqlite
+__pycache__/
+__vscode__/
