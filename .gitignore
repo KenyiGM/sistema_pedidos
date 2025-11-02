@@ -10,3 +10,4 @@ venv/
 *.sqlite
 __pycache__/
 __vscode__/
+.pytest_cache/
