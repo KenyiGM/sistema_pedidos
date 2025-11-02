@@ -80,5 +80,5 @@ def test_eliminar_producto(producto_repository):
     producto_eliminado = producto_repository.eliminar(producto_creado.id)
     assert producto_eliminado is True
 
-    producto_buscado = producto_repository.buscar_por_id(producto_creado.id)
+    producto_buscado = producto_repository.obtener_por_id(producto_creado.id)
     assert producto_buscado is None
