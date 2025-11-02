@@ -30,9 +30,8 @@ class ProductoRepository:
         producto = self.obtener_por_id(producto_id)
         if not producto:
             return None
-        for key, value in producto_actualizado.dict(exclude_unset=True).items():
-            setattr(producto, key, value)
         try:
+            producto = producto_actualizado
             self.session.add(producto)
             self.session.commit()
             self.session.refresh(producto)
@@ -62,7 +61,6 @@ class ProductoRepository:
         try:
             self.session.delete(producto)
             self.session.commit()
-            self.session.refresh(producto)
             return True
         except Exception as e:
             self.session.rollback()
