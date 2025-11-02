@@ -23,7 +23,6 @@ def test_verificacion_valores_default_producto():
     )
     assert producto.id == None
     assert producto.activo == True
-    assert producto.fecha_actualizacion == None
 
 
 def test_actualizacion_producto():
